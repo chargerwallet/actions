@@ -1,0 +1,20 @@
+name: 'Build Gradle Edit'
+description: ''
+author: 'chargerwallet'
+inputs:
+  versionCode:
+    description: 'versionCode'
+    required: true
+  versionName:
+    description: 'versionName'
+    required: true
+  packageName:
+    description: 'packageName (ApplicationID)'
+    required: false
+  android_dir:
+    description: 'source dir'
+    default: './'
+    required: false
+runs:
+  using: 'node16'
+  main: 'index.js'
